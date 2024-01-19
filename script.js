@@ -1,20 +1,21 @@
 // complete this js code
-function Person(name, age) {
+class Person() {
+	constructor(name, age){
 	this.name=name;
 	this.age=age;
+	}
 greet(){
-	console.log("hello my name is ${name},i am ${age} years old.")
+	console.log("hello my name is this.name,i am this.age years old.")
 }
 }
-
-function Employee(name, age, jobTitle) {
-	this.name=name;
-	this.age=age;
+class Employee extends Person(name, age, jobTitle) {
+	super(name,age)
+	// this.name=name;
+	// this.age=age;
 	this.jobTitle=jobTitle;
-	__prototype__:Person(name,age);
 	jobGreet()
 	{
-		console.log("hello my name is ${name},i am ${age} years old ,and  my job title is ${jobTitle}");
+		console.log("hello my name is this.name,i am this.age years old, and  my job title is this.jobTitle");
 	}
 }
 
